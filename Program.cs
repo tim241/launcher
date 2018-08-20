@@ -70,6 +70,8 @@ namespace launcher
                 Err("invalid config file!");
             
             int exitcode = Exec(exeFile, $"--workDir {dataDir}");
+
+            Environment.Exit(exitcode);
         }
     }
 }
